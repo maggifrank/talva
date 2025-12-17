@@ -27,6 +27,24 @@ body {
   padding: 24px;
   box-shadow: 0 20px 80px rgba(0,0,0,0.35);
 }
+a {
+  color: #9bb4ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8fa6e6;
+}
+
+a:hover,
+a:focus {
+  color: #c7d3ff;
+  text-decoration: underline;
+}
+
+a {
+  transition: color 0.15s ease;
+}
 
 .header h1 { margin: 0 0 6px; font-size: 28px; }
 .date { margin: 0; color: var(--muted); }
