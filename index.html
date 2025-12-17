@@ -20,11 +20,25 @@
 <body>
   <main class="card">
     <header class="header">
-      <center><h1 id="siteTitle">ÞAÐ ER TÖLVA EKKI TALVA!</h1></center>
-      <p class="date" id="todayLabel"></p>
+      <center>
+        <h1 id="siteTitle">ÞAÐ ER TÖLVA EKKI TALVA!</h1>
+        <img id="randomImage" src="" alt="Talva image" style="max-width:100%; height:auto;">
+      </center>
     </header>
   </main>
 
-  <script src="/app.js"></script>
+<script>
+  const images = [
+    "images/angry1.png",
+    "images/angry2.png",
+    "images/angry3.jpg"
+  ];
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const selectedImage = images[randomIndex];
+
+  document.getElementById("randomImage").src = selectedImage;
+</script>
+
 </body>
 </html>
